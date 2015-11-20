@@ -66,6 +66,8 @@ transition: zoom
 transition-speed: slow
 font-family: helvetica
 
+The app can be run at [https://sonialebofsky.shinyapps.io/tripApp](https://sonialebofsky.shinyapps.io/tripApp).
+
 Here's a screen-shot of the app in action:
 
 ![alt text](app_screenshot.png)
