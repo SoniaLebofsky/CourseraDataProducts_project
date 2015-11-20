@@ -8,4 +8,4 @@ Included are the following:
 
 * server.R and ui.R code for shiny app.
 
-* Slidify code for app pitch deck.
+* R Presenter code for app pitch deck.
