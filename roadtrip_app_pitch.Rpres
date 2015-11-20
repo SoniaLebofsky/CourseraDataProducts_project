@@ -1,0 +1,71 @@
+<style>
+    .reveal h1 {
+        word-wrap: normal;
+        -webkit-hyphens: none;
+    }
+    .small-code pre code {
+        font-size: 1em;
+    }
+    .reveal h3 {
+        text-shadow: 2px 2px #0000ff;
+    }
+</style>
+
+European Road Trip Planner
+========================================================
+author: Sonia Lebofsky
+transition: rotate
+
+
+Summary
+========================================================
+transition: linear
+font-family: helvetica
+
+This shiny app can be used to help you plan your European road trip!
+
+Here's how it works:
+
+* From the provided list of EU cities, you find the one you are starting your trip from. 
+
+* Use the slider to tell the app what is the maximum distance you are willing to drive (in kilometers).
+
+* The app will then show you all the possible trips starting from the city you chose, but then highlights the cities you can reach given your max driving distance.
+
+
+The Dataset
+========================================================
+transition: linear
+font-family: helvetica
+
+The app uses the **eurodist** dataset from the R datasets package.
+
+The dataset consists of the road distances (in kms) between 21 cities in Europe. The data is from a table in
+*The Cambridge Encyclopaedia*.
+
+The data is given as `dist` objects, which is easier to manipulate when converted into a matrix format.
+
+The next slide shows a preview of the actual data.
+
+========================================================
+title: false
+transition: linear
+class: small-code
+type: sub-section
+
+```{r}
+library(datasets)
+data("eurodist")
+head(as.matrix(eurodist))
+```
+
+fifth slide
+========================================================
+title: false
+transition: zoom
+transition-speed: slow
+font-family: helvetica
+
+Here's a screen-shot of the app in action:
+
+![alt text](app_screenshot.png)
